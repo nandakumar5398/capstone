@@ -199,10 +199,10 @@ def for_test():
 
 @app.route('/login')
 def login():
-    link = 'https://cshop.auth0.com/'
-    link = link + 'authorize?response_type=token&'
-    link = link + 'client_id=' + Client_ID
-    link = link + '&redirect_uri=http://127.0.0.1:5000/movies'
+    link = 'https://cshop.auth0.com/authorize?'
+    link = link + 'audience=capstone&response_type=token&'
+    link = link + 'client_id=54SRzrOYZo9QeLF7oP4dPWrLnijm6dID&'
+    link = link + 'redirect_uri=https://capstone-master.herokuapp.com/'
     return redirect(link)
 
 
